@@ -1,0 +1,109 @@
+div.nav {
+  animation: nav 2s linear 0s 1 normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  min-width: 400px;
+  background-color: black;
+  z-index: 1;
+}
+
+div.nav-curtain {
+  animation: nav-curtain 3s linear 0s 1 normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  min-width: 400px;
+  background-color: rgba(0,0,0,0);
+  z-index: 2;
+}
+
+@keyframes nav {
+  0% {
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+  }
+
+  35% {
+    width: 45%;
+    height: 100%;
+    background-color: black;
+  }
+
+  100% {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+  }
+}
+
+@keyframes nav-curtain {
+  0% {
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0,0,0,255);
+  }
+
+  66% {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,0,0,255);
+  }
+
+  100% {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+  }
+}
+
+div.nav p {
+  color: white;
+  font-size: 0.8em;
+  font-family: "Gill Sans";
+  width: 50%;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  float: right;
+}
+
+div.nav a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+div.nav a:hover {
+  color: #4183c4;
+  text-decoration: underline;
+}
+
+
+div.nav h1 {
+  color: white;
+  font-family: "Optima";
+  width: 50%;
+  margin-top: 1em;
+  margin-right: 1em;
+  float: right;
+}
+
+div.gallery {
+  width: 50%;
+  margin-top: 1em;
+  margin-right: 1em;
+  float: right;
+}
+
+.gallery img {
+  margin: 0.5em;
+  padding: 0;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: 50px;
+}
